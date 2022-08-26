@@ -47,8 +47,7 @@ header{
 
 }
 .card{
-    background-image: url(./../img/empty-dark-grey-wall-with-texture-good-for-background.jpg);
-    background-repeat: no-repeat;
+    background-color: rgba(0, 0, 0, 0.562);    
     background-size: 120%;
     color: white;
     max-height: 35vh;
@@ -173,6 +172,47 @@ a{
 .informacion a:hover{
 font-weight: 600;
 color: rgb(209, 207, 207)
+}
+
+.productos .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: stretch;
+    margin-left:20px
+}
+
+.productos .card{
+    max-height: 100%;
+}
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.productos .card img{
+    height: 200px;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.btn.btn-primary {
+    background-color: white;
+    color: black;
+    font-weight: 400;
+    transition: all 0.5s;
+}
+
+.btn.btn-primary:hover {
+    background-color: black;
+    color: white;
+    border-color: rgba(223, 241, 241, 0.329);
+}
+
+h6{
+    color: white;
 }
 
 /* no comprendo por qué no se ponen las imagenes de las tarjetas una al lado de la otra */
