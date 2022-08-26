@@ -1,0 +1,211 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(./../img/empty-dark-grey-wall-with-texture-good-for-background.jpg);
+    background-repeat: no-repeat;
+}
+
+header{
+    background-color: black;
+}
+
+.navbar-toggler-icon{
+    color: white;
+}
+
+.btn-outline-success{
+    border-color: rgb(29, 29, 29);
+}
+
+.btn-outline-success:hover{
+    background-color: rgba(255, 255, 255, 0.164);
+    border-color: rgba(0, 0, 0, 0.137);
+
+}
+
+.search{
+    display: flex;
+    justify-content: right;
+}
+
+.mobile-search{
+    display: none;
+}
+
+.carousel-inner{
+    height: 100%;
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px
+
+}
+.card{
+    background-image: url(./../img/empty-dark-grey-wall-with-texture-good-for-background.jpg);
+    background-repeat: no-repeat;
+    background-size: 120%;
+    color: white;
+    max-height: 35vh;
+}
+
+
+.card-body a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    max-height: 100%;
+}
+
+.card-body a img{
+    transition: all 1s;
+}
+.card-body a:hover img{
+transform: scale(110%);
+object-fit: contain;
+}
+
+.card-body a img{
+    width: 80%;
+    display: flex;
+}
+
+
+.card-container{
+    height: 100%;
+}
+
+.info {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;   
+}
+
+.info div{
+    display: flex;
+    justify-content: center;
+}
+
+.info-card{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+color: white;
+text-decoration: none;
+}
+
+.info-card:hover img {
+transform: scale(110%);
+}
+
+.info-card h6{
+    transition: all 1s;
+}
+.info-card:hover h6{
+    text-decoration: none;
+    color: white;
+    font-size: 17px
+}
+.info-card img{
+    width: 50px;
+    transition: all 1s;
+}
+.info-card:hover p{
+    color: white;
+    text-decoration: none;
+}
+.credit-cards{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top:5px;
+}
+
+
+.credit-cards img{
+    display: flex;
+    flex-direction: row;
+    width: 50px;
+}
+
+footer{
+    margin-top: 20px;
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.226) 0%, rgba(255,255,255,0) 100%);
+padding-top: 20px;
+padding-left: 20px;
+margin-right: 0px;
+width: 100%;}
+
+.informacion{
+   color: white;
+   text-decoration: none;
+   display: flex;
+    flex-direction: column;
+}
+
+.newsletter h6{
+    color: white;
+}
+
+.newsletter p{
+    color:white
+}
+.newsletter form input{
+    width: 80%;
+}
+
+a{
+    color: white;
+   text-decoration: none;
+   transition: all 1s;
+}
+
+.informacion a:hover{
+font-weight: 600;
+color: rgb(209, 207, 207)
+}
+
+/* no comprendo por qué no se ponen las imagenes de las tarjetas una al lado de la otra */
+
+@media only screen and (max-width: 990px){
+    .search{
+        display: flex;
+        justify-content: left;
+        padding: 0px;
+    }
+
+    .d-flex{
+        margin-top: 10px;
+    }
+
+    .cards{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .card{
+        height: 50%;
+
+    }
+
+    .card-body a img{
+        width: 50%;
+        display: flex;
+    }
+    
+    .info div{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    }
